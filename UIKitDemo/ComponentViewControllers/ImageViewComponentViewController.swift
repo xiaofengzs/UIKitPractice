@@ -29,15 +29,15 @@ class ImageViewComponentViewController: UIViewController {
               // ...
           }
 
-          private func setupLayout() {
-              view.addSubview(imageView)
-              imageView.translatesAutoresizingMaskIntoConstraints = false
-              NSLayoutConstraint.activate([
-                  imageView.widthAnchor.constraint(equalToConstant: 200),
-                  imageView.heightAnchor.constraint(equalToConstant: 200),
-                  imageView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-                  imageView.centerYAnchor.constraint(equalTo: view.centerYAnchor)
-              ])
-          }
+    private func setupLayout() {
+        view.addSubview(imageView)
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            imageView.widthAnchor.constraint(equalToConstant: 200),
+            imageView.heightAnchor.constraint(equalToConstant: 200),
+            imageView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            imageView.centerYAnchor.constraint(equalTo: view.centerYAnchor)
+        ])
+    }
           
 }
